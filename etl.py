@@ -6,11 +6,11 @@ import random
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
-# 1. INITIALIZE
+# Inicializando a biblioteca faker com padrao americano
 fake = Faker('en_US')
 
-def gerar_dados_pedidos_etl(n_registro):
-    # --- E (EXTRACT / GENERATE) ---
+def gerar_dados_pedidos_etl(n_registros):
+    # Extraindo dados
     dados_brutos = []
     tipos_pagamento = ['Cartão de Crédito', 'Boleto', 'Pix', 'Cartão de Débito']
     produtos_exemplo = ['Mouse Gamer', 'Teclado Mecânico', 'Monitor 24"', 'Headset', 'Webcam HD', 'Pad Mouse XL']
